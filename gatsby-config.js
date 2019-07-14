@@ -37,14 +37,7 @@ module.exports = {
         name: `menuItems`,
         path: `${__dirname}/src/menuItems`,
       },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `locale`,
-        path: `${__dirname}/locale`,
-      },
-    },
+    },  
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
