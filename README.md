@@ -1,2 +1,11 @@
 # docs.clouway.com
-clouWay Documentation Site
+clouWay Doc Site
+
+
+### Development
+
+```
+yarn install
+yarn dev
+```
+
