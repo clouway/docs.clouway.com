@@ -3,6 +3,7 @@ date: "2019-07-20"
 title: Първи Стъпки
 root: "/politis"
 parents: ["Начало"]
+priority: 2
 ---
 <h1 align="center">
   Първи Стъпки
