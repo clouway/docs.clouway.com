@@ -1,6 +1,7 @@
 {
   "version": 2,
   "name": "docs",
+  "alias": ["docs.clouway.com"],
   "builds": [
     {
       "src": "package.json",
