@@ -15,7 +15,8 @@ const convertToTree = (data) => {
         path: edge.node.fields.slug,
         key: edge.node.id,
         title: edge.node.frontmatter.title,
-        parents: edge.node.frontmatter.parents
+        parents: edge.node.frontmatter.parents,
+        priority: edge.node.frontmatter.priority
       })
     })
   return constructTree(list)
@@ -52,7 +53,7 @@ const sortTree = tree => {
   tree.sort((a,b)=> {
     if (((a.children && b.children) || 
     (!a.children && !b.children)) &&
-    a.title > b.title) return 1
+    a.priority > b.priority) return 1
     else if (a.children) return 1
     return -1
   })
@@ -75,7 +76,7 @@ class SidebarContents extends Component {
       <StaticQuery
         query={graphql`
           query sidebarContentQuery {
-            allMarkdownRemark(sort: { order: ASC, fields: [fields___slug] }) {
+            allMarkdownRemark(sort: { order: ASC, fields: [frontmatter___priority] }) {
               edges {
                 node {
                   fields {
@@ -85,6 +86,7 @@ class SidebarContents extends Component {
                   frontmatter {
                     title
                     parents
+                    priority
                   }
                 }
               }
@@ -97,7 +99,8 @@ class SidebarContents extends Component {
           const targetSlug = '/' + language + root
           const [tree, dir] = convertToTree(data.allMarkdownRemark.edges.filter(node => 
             node.node.fields.slug.startsWith(targetSlug)
-          ))                    
+          ))    
+                            
           sortTree(tree)          
           
           const loop = data => data.map((item) => {

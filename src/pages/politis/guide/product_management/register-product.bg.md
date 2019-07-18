@@ -1,8 +1,9 @@
 ---
-date: "2019-07-20"
+date: "2019-07-18"
 title: Управление на Продукти
 root: "/politis"
 parents: ["Ръководство"]
+priority: 3
 ---
 <h1 align="center">
   Управление на продукти
