@@ -23,10 +23,15 @@
     "gatsby-transformer-json": "^2.2.0",
     "gatsby-transformer-remark": "^2.6.5",
     "gatsby-transformer-sharp": "^2.2.3",
+    "i18next": "^17.0.6",
+    "i18next-browser-languagedetector": "^3.0.1",
+    "i18next-sync-fs-backend": "^1.1.1",
+    "i18next-xhr-backend": "^3.0.0",
     "katex": "^0.10.2",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-helmet": "^5.2.1",
+    "react-i18next": "^10.11.4",
     "react-redux": "^7.0.3",
     "react-responsive": "^6.1.2",
     "rehype-react": "^4.0.1"
@@ -41,9 +46,10 @@
     "start": "npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "now-build": "npm run build"    
+    "now-build": "npm run build"
   },
   "devDependencies": {
+    "babel-eslint": "^9.0.0",
     "eslint": "^4.19.1",
     "eslint-plugin-react": "^7.11.1",
     "gatsby-plugin-remove-trailing-slashes": "^2.0.11",
