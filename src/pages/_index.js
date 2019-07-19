@@ -21,7 +21,7 @@ const IndexPage = ({navigate, location}) => {
             <Button type="primary" size="large" style={{marginRight: 10}}>Politis</Button>
           </Link>
 
-          <Link to="/bg/fleerp/get-started/introduction">
+          <Link to="/bg/fleerp/docs/get-started/user-account/user-registration">
             <Button type="primary" size="large" style={{marginRight: 10}}>Fleerp</Button>
           </Link>
         </div>

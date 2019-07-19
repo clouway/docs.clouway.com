@@ -70,8 +70,10 @@ module.exports = {
               // It's important to specify the maxWidth (in pixels) of
               // the content container as this plugin uses this as the
               // base for generating different widths of each image.
-              maxWidth: 590,
-            },
+              maxWidth: 1500,
+              wrapperStyle: 'box-shadow: 0 0 50px rgba(0, 0, 0, 0.15);',
+              linkImagesToOriginal: false
+            }
           },
         ],
       },
