@@ -1,11 +1,11 @@
 import React, { Component } from 'react'
-import { Link, graphql, StaticQuery } from 'gatsby'
+import { graphql, StaticQuery } from 'gatsby'
 import Button from 'antd/lib/button'
 import { connect } from 'react-redux'
 import { onChangeMenuState } from '../../actions/layout'
 import List from 'antd/lib/list'
 import { getMenuState } from '../../store/selectors';
-
+import Link from 'components/Link'
 
 class Menu extends Component {
   onChangeMenuState = (nItem) => {

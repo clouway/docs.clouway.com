@@ -1,9 +1,10 @@
 import React, { Component } from 'react'
-import { graphql, StaticQuery, Link } from "gatsby"
+import { graphql, StaticQuery } from "gatsby"
 import { connect } from "react-redux"
 import { getSidebarState } from '../../store/selectors';
 import { onSetSidebarOpen } from '../../actions/layout'
 import Menu from 'antd/lib/menu'
+import Link from 'components/Link'
 import 'antd/lib/menu/style/css'
 import './SidebarContents.css'
 
@@ -51,7 +52,7 @@ const constructTree = (list) => {
 
 const sortTree = tree => {
   tree.sort((a,b)=> {
-    if (((a.children && b.children) || 
+    if (((a.children && b.children) ||
     (!a.children && !b.children)) &&
     a.priority > b.priority) return 1
     else if (a.children) return 1
@@ -66,7 +67,7 @@ class SidebarContents extends Component {
 
   render() {
     const { expandedKey } = this.props.sidebar
-    const { 
+    const {
       root,
       slug,
       language
@@ -97,12 +98,12 @@ class SidebarContents extends Component {
           // Make it compatible with gatsby-plugins-i18n as the url endpoints
           // are in format "/lng/slug"
           const targetSlug = '/' + language + root
-          const [tree, dir] = convertToTree(data.allMarkdownRemark.edges.filter(node => 
+          const [tree, dir] = convertToTree(data.allMarkdownRemark.edges.filter(node =>
             node.node.fields.slug.startsWith(targetSlug)
-          ))    
-                            
-          sortTree(tree)          
-          
+          ))
+
+          sortTree(tree)
+
           const loop = data => data.map((item) => {
             if (item.children) {
               sortTree(item.children)
@@ -123,15 +124,15 @@ class SidebarContents extends Component {
               (slug.slice(0,-1) === item.node.fields.slug && slug.slice(-1) === '/'))
             .length > 0 ? [expandedKey] : []
           const defaultOpenKeys = dir.map(item => item.key)
-          return (            
-              <Menu 
+          return (
+              <Menu
                 mode="inline"
                 defaultOpenKeys={defaultOpenKeys}
                 selectedKeys={selectedKeys}
                 inlineIndent={12}
               >
                 {loop(tree)}
-              </Menu>            
+              </Menu>
           )
         }}
       />

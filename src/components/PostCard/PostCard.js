@@ -1,6 +1,9 @@
 import React from "react"
-import { Link } from "gatsby"
+
 import Card from 'antd/lib/card'
+
+import Link from 'components/Link'
+
 import 'antd/lib/card/style/css'
 
 const PostCard = ({ post }) => (

@@ -1,26 +1,26 @@
-import React, { Component } from 'react'
-import { Link } from 'gatsby';
+import React, {Component} from 'react'
+
+import Link from 'components/Link';
+
 import Menu from '../Menu';
-import { getMenuState } from '../../store/selectors';
-import { connect } from 'react-redux';
+import {getMenuState} from '../../store/selectors';
+
+import {connect} from 'react-redux';
 
 class Header extends Component {
-
   render() {
-    const { 
+    const {
       siteTitle,
       sidebarDocked,
       menuOpen,
       nMenuItem,
     } = this.props
-    
+
     return (
       <div
         style={{
-            // position: "fixed",
-            // top: 0,
           width: "100%",
-          height: (menuOpen && !sidebarDocked) ? nMenuItem*32 + 50 : 55,
+          height: (menuOpen && !sidebarDocked) ? nMenuItem * 32 + 50 : 55,
           marginBottom: 20,
           background: 'cornflowerblue',
         }}
@@ -37,9 +37,9 @@ class Header extends Component {
             float: 'left',
             marginBottom: '10px',
           }}>
-            <h1 style={{ margin: 0, fontSize: "1.25rem" }}>
+            <h1 style={{margin: 0, fontSize: "1.25rem"}}>
               <Link
-                to="/"
+                to=""
                 style={{
                   color: 'white',
                   textDecoration: 'none',
@@ -63,4 +63,4 @@ const mapStateToProps = (state) => {
   }
 }
 
-export default connect(mapStateToProps) (Header);
+export default connect(mapStateToProps)(Header);
