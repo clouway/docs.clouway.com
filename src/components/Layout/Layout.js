@@ -74,7 +74,7 @@ class Layout extends React.Component {
                           </Col>
                           <Col>
                             {(matches && onPostPage) ?
-                              <ResponsiveTopBar root={sidebarRoot} slug={slug}/>
+                              <ResponsiveTopBar root={sidebarRoot} slug={slug} language={language}/>
                               : null
                             }
                           </Col>
