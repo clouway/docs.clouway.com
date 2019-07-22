@@ -5,6 +5,10 @@ import Link from 'gatsby-link'
 import {withTranslation} from 'react-i18next'
 
 const LinkWrapper = ({t, to, tReady, i18n, defaultNS, ...props}) => {
+  if (!i18n.language) {
+    return null
+  }
+
   if (to.startsWith(`/${i18n.language}`)) {
     return <Link to={to} {...props} />
   }
