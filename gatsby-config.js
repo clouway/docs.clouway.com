@@ -75,6 +75,9 @@ module.exports = {
               linkImagesToOriginal: false
             }
           },
+          {
+            resolve: 'gatsby-remark-copy-linked-files'
+          }
         ],
       },
     },
