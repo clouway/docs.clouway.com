@@ -12,10 +12,10 @@ class ResponsiveSidebar extends Component {
     return (
       <div style={{
         position: "fixed",
-        top: 80,
+        top: 60,
         left: 10,
         right: "80%",
-        bottom: 0,
+        bottom: 50,
         overflow: "auto", 
       }} >
         <div style={{
