@@ -1,8 +1,10 @@
 import React, {Component} from 'react'
 
+import LangBar from '../LangBar'
+
 class Footer extends Component {
   render() {
-    return <div>Footer</div>
+    return <LangBar/>
   }
 }
 
