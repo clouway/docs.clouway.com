@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
 import { graphql, StaticQuery } from 'gatsby'
-import Button from 'antd/lib/button'
+import {List, Button} from 'antd'
 import { connect } from 'react-redux'
 import { onChangeMenuState } from '../../actions/layout'
-import List from 'antd/lib/list'
 import { getMenuState } from '../../store/selectors';
 import Link from 'components/Link'
 
@@ -13,7 +12,7 @@ class Menu extends Component {
   }
 
   render() {
-    const { 
+    const {
       sidebarDocked,
       menuOpen,
     } = this.props
@@ -40,7 +39,7 @@ class Menu extends Component {
             <div>
               {menuItems.reverse().map(item => {
                 return (
-                  <div 
+                  <div
                     style={{ marginLeft: "2em", float: "right" }}
                     key={menuItems.indexOf(item)}
                   >
@@ -58,7 +57,7 @@ class Menu extends Component {
             </div>
             }
             {!sidebarDocked &&
-              <Button 
+              <Button
                 style={{
                   position: 'fixed',
                   right: 10,
@@ -76,10 +75,7 @@ class Menu extends Component {
                 dataSource={menuItems}
                 renderItem={item => (
                   <List.Item
-                    style={{
-                      listStyle: 'none',
-                      marginLeft: '-20px',
-                    }}
+                    style={{padding: '0 0 20px', listStyle: 'none'}}
                     key={menuItems.indexOf(item)}
                   >
                     <List.Item.Meta
@@ -98,6 +94,7 @@ class Menu extends Component {
                 style={{
                   width: '100%',
                   float: 'left',
+                  paddingLeft: 20
                 }}
               />
             }

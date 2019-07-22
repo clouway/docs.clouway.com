@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'clouWay Doc Site'  
+    title: 'clouWay Doc Site'
   },
   plugins: [
-    'gatsby-plugin-react-helmet',  
+    'gatsby-plugin-sass',
+    'gatsby-plugin-antd',
+    'gatsby-plugin-react-helmet',
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
@@ -37,7 +39,7 @@ module.exports = {
         name: `menuItems`,
         path: `${__dirname}/src/menuItems`,
       },
-    },  
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
@@ -57,7 +59,7 @@ module.exports = {
       options: {
         plugins: [
           'gatsby-remark-component',
-          `gatsby-remark-katex`,          
+          `gatsby-remark-katex`,
           {
             resolve: `gatsby-remark-autolink-headers`,
             options: {
@@ -81,7 +83,7 @@ module.exports = {
         ],
       },
     },
-    `gatsby-plugin-remove-trailing-slashes`    
+    `gatsby-plugin-remove-trailing-slashes`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Button from 'antd/lib/button'
-import 'antd/lib/button/style/css'
+import { Button } from 'antd'
 import { getSidebarState, getAnchorState, getMenuState } from '../../store/selectors';
 import { onSetAnchorOpen, onSetSidebarOpen } from '../../actions/layout'
 import SidebarContents from '../SidebarContents';
@@ -25,7 +24,7 @@ class ResponsiveTopBar extends Component {
   }
 
   render() {
-    const { 
+    const {
       sidebarOpen,
       anchorOpen,
       root,
@@ -47,7 +46,7 @@ class ResponsiveTopBar extends Component {
           width: "100%",
           height: 40,
           background: 'aliceblue',
-          marginTop: '-20px',
+          marginTop: '55px',
         }}
       >
         {!anchorOpen &&
@@ -81,6 +80,7 @@ class ResponsiveTopBar extends Component {
           left: 0,
           right: 0,
           bottom: 0,
+          zIndex: 1,
           backgroundColor: 'white',
         }}>
           <div style={{
@@ -105,6 +105,7 @@ class ResponsiveTopBar extends Component {
           left: 0,
           right: 0,
           bottom: 0,
+          zIndex: 1,
           overflowY: "auto",
           backgroundColor: 'white',
           WebkitOverflowScrolling: "touch",
