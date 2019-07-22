@@ -3,25 +3,25 @@ date: "2019-07-20"
 title: Списък с аларми
 root: "/fleerp"
 parents: ["Уеб приложение", "Аларми"]
-priority: 34
+priority: 26
 ---
 
 # Списък с аларми
 
 При необходимост от филтриране на информацията в списъка, това е възможно от лентата в горната част на екрана.
 
-![AlarmsBar](alarms-bar.png)
+![AlarmsBar](alarms-bar-bg.png)
 
 Потребителят може да променя зададения времеви период, с помощта на добавеният бутон.
 
-![Range](range.png)
+![Range](range-bg.png)
 
 С цел по-лесно намиране на желаната информация са добавени следните полета за филтриране: 
 
 - по група;
 
-![FilterByGroup](filter-by-group.png)
+![FilterByGroup](filter-by-group-bg.png)
 
 - по тип на алармата
 
-![FilterByType](filter-by-type.png)
+![FilterByType](filter-by-type-bg.png)

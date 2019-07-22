@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Stops
 root: "/fleerp"
 parents: ["Web application", "Reports"]
-priority: 38
+priority: 30
 ---
 
 # Stops
@@ -23,4 +23,4 @@ The report contains the following information:
 - **end** - end of the period of stay;
 - **duration** - the time that the tracking object was stationary;
 
-![Stops](stops.png)
+![Stops](stops-en.png)

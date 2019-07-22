@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Usage
 root: "/fleerp"
 parents: ["Web application", "Reports"]
-priority: 39
+priority: 31
 ---
 
 # Usage
@@ -27,4 +27,4 @@ The report contains the following information:
   - **mileage** - the distance traveled;
   - **duration** - the total time the tracking object was moving;
 
-![Stops](usage.png)
+![Stops](usage-en.png)

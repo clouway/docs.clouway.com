@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Digital inputs
 root: "/fleerp"
 parents: ["Web application", "Reports"]
-priority: 43
+priority: 35
 ---
 
 # Digital inputs
@@ -11,7 +11,7 @@ priority: 43
 The digital inputs provides the user with possibility to generate detailed report concerning the already
 configured digital ports on a given tracking object or group of tracking objects.
 
-![Digital-inputs](digitals.png)
+![Digital-inputs](digitals-en.png)
 
 <br>
 ---
@@ -23,7 +23,7 @@ The screen is divided in two components:
 
 ### Side-panel
 
-![Digital-inputs](side-panel.png)
+![Digital-inputs](side-panel-en.png)
 
 <br>
 ---
@@ -45,7 +45,7 @@ repetitive port types, such as: door-1, door-2 etc...
 
 ### Main screen
 
-![Digital-inputs](main-screen.png)
+![Digital-inputs](main-screen-en.png)
 
 <br>
 ---
@@ -59,4 +59,4 @@ The main screen consists of several fields:
 
 There is the option for printing the generated report by the provided button:
 
-![Digital-inputs](print.png)
+![Digital-inputs](print-en.png)

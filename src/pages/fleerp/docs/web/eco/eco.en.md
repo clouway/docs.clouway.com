@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Introduction
 root: "/fleerp"
 parents: ["Web application", "Eco"]
-priority: 29
+priority: 21
 ---
 
 # Eco driving
@@ -24,7 +24,7 @@ The side panel serves the purpose of picking a set period of time, for which eco
 generated, filtering and selection of a concrete driver or vehicle, to display the corresponding
 detailed rating as well as the violations.
 
-![Eco](side-panel.png)
+![Eco](side-panel-en.png)
 
 <br>
 ---
@@ -36,4 +36,4 @@ The summary screen contains:
 have driver token reader installed).
 - legend for the rating and violations
 
-![Eco](general-screen.png)
+![Eco](general-screen-en.png)

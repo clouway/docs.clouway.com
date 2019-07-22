@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Analog inputs
 root: "/fleerp"
 parents: ["Web application", "Reports"]
-priority: 42
+priority: 34
 ---
 
 # Analog inputs
@@ -27,11 +27,11 @@ For this example, the following analog ports are chosen:
 For more detailed information, dragging the mouse on the line chart displays
 the data from the analog ports at any point in the report.
 
-![AnalogInputs](analog-inputs.png)
+![AnalogInputs](analog-inputs-en.png)
 
 The visualization of data from different analog ports can be hidden and displayed with click on a label.
 
-![AnalogInputs](hidden-ports.png)
+![AnalogInputs](hidden-ports-en.png)
 
 ---
 
@@ -41,6 +41,6 @@ There are possible noises in the analog data that are received by the tracking o
 This problem is easily solved when configuring a port. In the settings of each port there is a "Noises" button 
 and when it is activated the line chart smooths *[link](../../../web/settings/tobjects/details/ports/analogs)*.
 
-![AnalogInputs](noise-true.png)
+![AnalogInputs](noise-true-en.png)
 
-![AnalogInputs](noise-false.png)
+![AnalogInputs](noise-false-en.png)

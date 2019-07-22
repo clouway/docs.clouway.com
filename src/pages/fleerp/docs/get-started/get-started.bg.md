@@ -3,6 +3,7 @@ date: "2019-07-20"
 title: Начало
 root: "/fleerp"
 parents: ["Първи стъпки"]
+priority: 1
 ---
 
 # Първи стъпки

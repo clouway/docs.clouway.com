@@ -14,7 +14,7 @@ priority: 2
 - Фамилия
 - Имейл адрес
   
-![Registration Form](registration-form.png)
+![Registration Form](registration-form-bg.png)
 <br><br>
 ---
 
@@ -31,4 +31,4 @@ priority: 2
 ---
 След активиране на профила, потребителят ще бъде пренасочен към системата за настройки, от където може да се достъпи Fleerp при кликване на съответната иконка или на [https://my.fleerp.com](https://my.fleerp.com)
 
-![Registration Form](accounts.png)
+![Registration Form](accounts-bg.png)

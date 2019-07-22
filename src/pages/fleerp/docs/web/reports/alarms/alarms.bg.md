@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Аларми
 root: "/fleerp"
 parents: ["Уеб приложение", "Справки"]
-priority: 41
+priority: 33
 ---
 
 # Аларми
@@ -19,9 +19,9 @@ priority: 41
 - край на алармата;
 - допълнителна информация;
 
-![TrackingObjectAlarms](to-alarms.png)
+![TrackingObjectAlarms](to-alarms-bg.png)
 
-![GroupAlarms](group-alarms.png)
+![GroupAlarms](group-alarms-bg.png)
 
 Ако потребителят посочи тип на аларма, при търсенето ще се визуализират само алармите от зададения тип. В противен случай
 ще бъдат визуализирани всички възникнали аларми.

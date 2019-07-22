@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Аналогови данни
 root: "/fleerp"
 parents: ["Уеб приложение", "Справки"]
-priority: 42
+priority: 34
 ---
 
 # Аналогови данни
@@ -26,11 +26,11 @@ priority: 42
 За по-детайлна информация, с плъзгане на мишката по графиката се визуализират данните от аналоговите портове
 за всеки един момент от справката.
 
-![AnalogInputs](analog-inputs.png)
+![AnalogInputs](analog-inputs-bg.png)
 
 Визуализирането на данни от различни аналогови портове може да бъде скривано и показвано с един клик върху даден етикет. 
 
-![AnalogInputs](hidden-ports.png)
+![AnalogInputs](hidden-ports-bg.png)
 
 ---
 
@@ -40,6 +40,6 @@ priority: 42
 лесно при конфигурирането на даден порт. В настройките на всеки порт има бутон "Шумове" и когато той е активиран
 графиката се изглажда *[линк](../../../web/settings/tobjects/details/ports/analogs)*.
 
-![AnalogInputs](noise-false.png)
+![AnalogInputs](noise-false-bg.png)
 
-![AnalogInputs](noise-true.png)
+![AnalogInputs](noise-true-bg.png)

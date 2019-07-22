@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Начало
 root: "/fleerp"
 parents: ["Уеб приложение", "Аларми"]
-priority: 33
+priority: 25
 ---
 
 # Аларми
@@ -16,8 +16,8 @@ priority: 33
 В текущата секция е визуализиран списък на всички възникнали аларми в рамките на даден период.
 По подразбиране списъкът съдържа всички възникнали аларми в рамките на деня.
 
-![Alarms](alarms.png)
+![Alarms](alarms-bg.png)
 
 Освен списък с аларми е налично и получаване на алармите във вид на известия, налични в лентата с меню.
 
-![AlarmNotification](alarm-notification.png)
+![AlarmNotification](alarm-notification-bg.png)

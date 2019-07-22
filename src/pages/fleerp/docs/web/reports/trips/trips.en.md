@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Trips
 root: "/fleerp"
 parents: ["Web application", "Reports"]
-priority: 37
+priority: 29
 ---
 
 # Trips
@@ -31,7 +31,7 @@ The report contains the following information:
   - **start** - the odometer reading at the start of the report;
   - **end** - the odometer reading at the end of the report;
   
-![Trips](simple.png)
+![Trips](simple-en.png)
 
 ---
 
@@ -62,4 +62,4 @@ The report contains the following information:
   - stop address;
 - **Idle** - the elapsed time from the stop to the start of the next trip of the tracking object;
 
-![Trips](details.png)
+![Trips](details-en.png)

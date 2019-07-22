@@ -14,7 +14,7 @@ The required information is:
  - Last name
  - Email address  
 
-![Registration Form](registration-form.png)
+![Registration Form](registration-form-en.png)
 <br><br>
 ---
 
@@ -32,4 +32,4 @@ After click "**Create an account**" button, further instructions will be receive
 
 After profile activation the user would be redirected to the configuration system from where it is possible to access Fleerp either after click on the marked icon or the following link [https://my.fleerp.com](https://my.fleerp.com).
 
-![Registration Form](accounts.png)
+![Registration Form](accounts-en.png)
