@@ -2,10 +2,10 @@ import React, {Component} from 'react'
 
 import Link from 'components/Link';
 
+import {connect} from 'react-redux';
+
 import Menu from '../Menu';
 import {getMenuState} from '../../store/selectors';
-
-import {connect} from 'react-redux';
 
 class Header extends Component {
   render() {
@@ -20,8 +20,7 @@ class Header extends Component {
       <div
         style={{
           width: "100%",
-          height: (menuOpen && !sidebarDocked) ? nMenuItem * 32 + 50 : 55,
-          marginBottom: 20,
+          height: (menuOpen && !sidebarDocked) ? nMenuItem * 32 + 55 : 55,
           background: 'cornflowerblue',
         }}
       >
@@ -29,15 +28,11 @@ class Header extends Component {
           style={{
             margin: '0 auto',
             maxWidth: 1360,
-            padding: '15px 18px',
             whiteSpace: 'nowrap',
           }}
         >
-          <div style={{
-            float: 'left',
-            marginBottom: '10px',
-          }}>
-            <h1 style={{margin: 0, fontSize: "1.25rem"}}>
+          <div style={{float: 'left'}}>
+            <h1 style={{fontSize: "1.25rem", margin: '15px 20px'}}>
               <Link
                 to=""
                 style={{

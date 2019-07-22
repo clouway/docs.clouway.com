@@ -1,27 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Row from 'antd/lib/row';
-import Col from 'antd/lib/col'
+import {Row, Col} from 'antd';
 import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive';
-import {default as AntdLayout} from 'antd/lib/layout';
+import {Layout as AntdLayout} from 'antd';
 import {StaticQuery, graphql} from 'gatsby'
 
-import Header from '../Header/Header'
+import Header from '../Header'
+import Footer from '../Footer'
 import Container from '../Container';
 import ResponsiveAnchor from '../ResponsiveAnchor';
 import ResponsiveTopBar from '../ResponsiveTopBar';
 import ResponsiveSidebar from '../ResponsiveSidebar';
 
-import './Layout.css'
 import I18N from './I18N';
+import classes from './Layout.module.scss';
 
 class Layout extends React.Component {
-  setPostPageState = (state) => {
-    this.props.setPostPageState(state)
-  }
-
   render() {
     const {
       slug,
@@ -60,26 +56,26 @@ class Layout extends React.Component {
                       <html lang='en'/>
                     </Helmet>
                     <AntdLayout>
-                      <AntdLayout.Header
-                        style={{
-                          position: 'fixed',
-                          top: 0,
-                          width: '100%',
-                          zIndex: 100,
-                        }}
-                      >
+                      <AntdLayout.Header className={classes.header}>
                         <Row>
                           <Col>
                             <Header siteTitle={data.site.siteMetadata.title} sidebarDocked={!matches}/>
                           </Col>
-                          <Col>
-                            {(matches && onPostPage) ?
-                              <ResponsiveTopBar root={sidebarRoot} slug={slug} language={language}/>
-                              : null
-                            }
-                          </Col>
                         </Row>
                       </AntdLayout.Header>
+
+                      <AntdLayout>
+                        <AntdLayout.Content>
+                          <Row>
+                            <Col>
+                              {(matches && onPostPage) ?
+                                <ResponsiveTopBar root={sidebarRoot} slug={slug} language={language}/>
+                                : null
+                              }
+                            </Col>
+                          </Row>
+                        </AntdLayout.Content>
+                      </AntdLayout>
 
                       {(!matches && onPostPage) ?
                         <AntdLayout>
@@ -87,6 +83,7 @@ class Layout extends React.Component {
                             <ResponsiveSidebar root={sidebarRoot} slug={slug} language={language}/>
                           </AntdLayout.Sider>
                           <AntdLayout.Content
+                            className={classes.content}
                             style={{
                               position: 'absolute',
                               left: '20%',
@@ -102,12 +99,20 @@ class Layout extends React.Component {
                           </AntdLayout.Sider>
                         </AntdLayout>
                         :
-                        <AntdLayout.Content>
+                        <AntdLayout.Content className={classes.content}>
                           <Container sidebarDocked={!matches} onPostPage={onPostPage}>
                             {children}
                           </Container>
                         </AntdLayout.Content>
                       }
+
+                      <AntdLayout.Footer className={classes.footer}>
+                        <Row>
+                          <Col>
+                            <Footer />
+                          </Col>
+                        </Row>
+                      </AntdLayout.Footer>
                     </AntdLayout>
                   </>)
                 }
