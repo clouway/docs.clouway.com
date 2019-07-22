@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Detailed screen
 root: "/fleerp"
 parents: ["Web application", "Eco"]
-priority: 31
+priority: 23
 ---
 
 # Detailed screen
@@ -13,7 +13,7 @@ The detailed screen allows the user to see the eco rating, which is calculated b
 - The mileage travelled for the selected time frame
 - The types of penalties that the object received, as well as their number
 
-![Detailed-screen](detailed-screen.png)
+![Detailed-screen](detailed-screen-en.png)
 
 The rating is shown in the left portion of the screen, in the right portion - the percent ratio of the penalties, that
 the object has received.

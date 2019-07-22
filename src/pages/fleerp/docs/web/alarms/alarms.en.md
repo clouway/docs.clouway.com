@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Introduction
 root: "/fleerp"
 parents: ["Web application", "Alarms"]
-priority: 33
+priority: 25
 ---
 
 # Alarms
@@ -17,8 +17,8 @@ The current section displays a list of all occurrences of alarms within a given 
 
 By default, the list contains all occurrences of alarms within the day.
 
-![Alarms](alarms.png)
+![Alarms](alarms-en.png)
 
 In addition to a list of alarms, alarms are available in the form of notifications available on the menu bar.
 
-![AlarmNotification](alarm-notification.png)
+![AlarmNotification](alarm-notification-en.png)

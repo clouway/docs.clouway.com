@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Цифрови данни
 root: "/fleerp"
 parents: ["Уеб приложение", "Справки"]
-priority: 43
+priority: 35
 ---
 
 # Цифрови данни
@@ -11,7 +11,7 @@ priority: 43
 Цифровите данни предоставят възможност на потребителя, да генерира подробна справка относно конфигурираните
 цифрови портове на даден проследяван обект или група от проследявани обекти.
 
-![Digital-inputs](digitals.png)
+![Digital-inputs](digitals-bg.png)
 
 <br>
 ---
@@ -23,7 +23,7 @@ priority: 43
 
 ### Страничен панел
 
-![Digital-inputs](side-panel.png)
+![Digital-inputs](side-panel-bg.png)
 
 <br>
 ---
@@ -45,7 +45,7 @@ priority: 43
 
 ### Основен екран
 
-![Digital-inputs](main-screen.png)
+![Digital-inputs](main-screen-bg.png)
 
 <br>
 ---
@@ -59,4 +59,4 @@ priority: 43
 
 Системата предоставя възможност и за принтиране на генерираната справка, чрез предвидения за това бутон:
 
-![Digital-inputs](print.png)
+![Digital-inputs](print-bg.png)

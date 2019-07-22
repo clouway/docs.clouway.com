@@ -3,14 +3,14 @@ date: "2019-07-20"
 title: Settings
 root: "/fleerp"
 parents: ["Web application", "Eco"]
-priority: 32
+priority: 24
 ---
 
 # Settings
 
 In the eco driving section is provided an option for additional configuration of the settings, related with the various eco indicators.
 
-![Settings](settings.png)
+![Settings](settings-en.png)
 
 The available settings includes configuration of penalty points which will be registered by the system for each of the following types of violations:
 
@@ -18,7 +18,7 @@ The available settings includes configuration of penalty points which will be re
 - Harsh driving
 - Excessive idling
 
-![Settings-section](settings-section.png)
+![Settings-section](settings-section-en.png)
 
 ### Speeding
 
@@ -26,7 +26,7 @@ The **speeding** section provides an option for configuration of:
 - the maximum allowable speed of movement at interval 0 - 180 km/h
 - penalty points which are defined by the user for speeding at different intervals
 
-![Speeding](speeding.png)
+![Speeding](speeding-en.png)
 
 ### Harsh driving
 
@@ -35,7 +35,7 @@ The **harsh driving** section provides an option for configuration of penalty po
 - Harsh braking
 - Harsh cornering
 
-![Harsh-driving](harsh-driving.png)
+![Harsh-driving](harsh-driving-en.png)
 
 ### Excessive idling
 
@@ -43,4 +43,4 @@ The **excessive idling** section provides an option for configuration of:
 - the time duration in minutes after which the penalty points are applied
 - penalty points for the idling period
 
-![Excessive-idling](excessive-idling.png)
+![Excessive-idling](excessive-idling-en.png)

@@ -20,7 +20,7 @@ Once the user has logged in, there are two ways to activate a device:
 The first step requires the user to choose between activating a GPS tracking device or a mobile device.
 To activate a GPS tracking device, "Advanced mode" must be selected and then click on the button "Next".
 
-![Tracking devices](first-step.png) 
+![Tracking devices](first-step-en.png) 
 
 ---
 
@@ -35,11 +35,11 @@ In the second step, the user must enter:
 The APN, User, and Password fields must be entered to enable auto setup of a tracking device,
 otherwise it is necessary to manual setup the device.
 
-![Tracking devices](second-step.png)
+![Tracking devices](second-step-en.png)
 
 For the "Mobile carrier" field, there is additional information to facilitate the user, which is available from the '?' button.
 
-![Tracking devices](info-box.png)
+![Tracking devices](info-box-en.png)
 
 ---
 
@@ -47,11 +47,11 @@ For the "Mobile carrier" field, there is additional information to facilitate th
 In the third step it is necessary to fill in all fields: *ID, Label, Manufacturer, Model, Category*.
 Once the data is filled in correctly, click on the button "Activate".
 
-![Tracking devices](last-step.png)
+![Tracking devices](last-step-en.png)
 
 For the ID field, there is additional information to facilitate the user, which is available from the '?' button.
 
-![Tracking devices](hint-box.png)
+![Tracking devices](hint-box-en.png)
 
 You can activate all GPS tracking devices listed in the list of supported models.
 If a model is not found, please contact us.

@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Introduction
 root: "/fleerp"
 parents: ["Web application", "Reports"]
-priority: 36
+priority: 28
 ---
 
 # Reports
@@ -33,7 +33,7 @@ The sidebar serves the following purposes:
 - filtering and selection of a concrete tracking object or group;
 - exporting - the generated report is exported to an Excel file; 
 
-![Reports](sidebar.png)
+![Reports](sidebar-en.png)
 
 ---
 
@@ -41,7 +41,7 @@ The sidebar serves the following purposes:
 
 The main screen displays data that is collected from the tracking objects for the selected time frame.
 
-![Reports](main-screen.png)
+![Reports](main-screen-en.png)
 
 ---
 

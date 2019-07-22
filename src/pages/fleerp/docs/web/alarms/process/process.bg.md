@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Обработване на аларми
 root: "/fleerp"
 parents: ["Уеб приложение", "Аларми"]
-priority: 35
+priority: 27
 ---
 
 # Обработване на аларми
@@ -13,8 +13,8 @@ priority: 35
 
 За да може да се постигне това потребителят първо трябва да влезе в екрана за обработване на аларми чрез посоченият линк.
 
-![ProcessLink](process-link.png)
+![ProcessLink](process-link-bg.png)
 
 Това, което е необходимо потребителят да направи за да обработи алармата е да кликне върху бутона "Обработи".
 
-![ProcessButton](process-button.png)
+![ProcessButton](process-button-bg.png)

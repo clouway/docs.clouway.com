@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Гориво
 root: "/fleerp"
 parents: ["Уеб приложение", "Справки"]
-priority: 40
+priority: 32
 ---
 
 # Гориво
@@ -22,22 +22,22 @@ priority: 40
  
 Справката може да бъде генерирана, както за един обект, така и за цяла група.
 
-![ToFuel](to-fuel.png)
+![ToFuel](to-fuel-bg.png)
 
-![GroupFuel](group-fuel.png)
+![GroupFuel](group-fuel-bg.png)
 
 Добавена е допълнителна визуализация във вид на графика, достъпна от бутона.
 
-![ChartButton](chart-button.png)
+![ChartButton](chart-button-bg.png)
 
-![FuelChart](fuel-chart.png)
+![FuelChart](fuel-chart-bg.png)
 
 Възможно е скриване/показване на данни от графиката след клик върху даден етикет.
 
-![ChartOptions](chart-options.png) 
+![ChartOptions](chart-options-bg.png) 
 
 При посочване с мишката върху точка от графиката се визуализира прозорец с информация за дадения момент.
 
-![Popup](popup.png)
+![Popup](popup-bg.png)
 
 **Важно:** функционалноста се намира в етап на бета разработка и е възможна поява на некоретни данни, поради неправилно отчетени от датчика стойности.

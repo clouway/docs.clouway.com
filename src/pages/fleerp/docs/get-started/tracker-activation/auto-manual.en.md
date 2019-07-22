@@ -40,5 +40,3 @@ The basic parameters, which should be set up manually:
 
 - APN settings for the chosen GSM network provider
 - Server address and port
-
-![AvsM](footer-icon.png)

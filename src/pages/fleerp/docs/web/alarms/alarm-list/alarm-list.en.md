@@ -3,25 +3,25 @@ date: "2019-07-20"
 title: Alarm list
 root: "/fleerp"
 parents: ["Web application", "Alarms"]
-priority: 34
+priority: 26
 ---
 
 # Alarm list
 
 If it's necessary to filter the information in the list, it is possible from the bar at the top of the screen.
 
-![AlarmsBar](alarms-bar.png)
+![AlarmsBar](alarms-bar-en.png)
 
 The user can change the specified time period with the added button.
 
-![Range](range.png)
+![Range](range-en.png)
 
 To make it easier to find the desired information, the following filtering fields are added:
 
 - by group;
 
-![FilterByGroup](filter-by-group.png)
+![FilterByGroup](filter-by-group-en.png)
 
 - by alarm type
 
-![FilterByType](filter-by-type.png)
+![FilterByType](filter-by-type-en.png)
