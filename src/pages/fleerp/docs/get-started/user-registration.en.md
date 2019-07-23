@@ -2,9 +2,17 @@
 date: "2019-07-20"
 title: User registration
 root: "/fleerp"
-parents: ["Get started", "User Account"]
+parents: ["Get started"]
 priority: 2
 ---
+
+# User Account
+
+Getting familiar with user management
+
+- User registration
+- Assign rights to user
+- Providing access to all available systems 
 
 # User registration 
 
