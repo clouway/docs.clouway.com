@@ -6,6 +6,13 @@ parents: ["Web application", "Settings", "Tracking objects", "Tracking object se
 priority: 43
 ---
 
+# Tracking object settings
+
+The user can access a tracking object settings by clicking on its label:
+
+![Details](details-en.png)
+
+
 # General tracking object settings
 
 The general settings of a tracking object provide the user with possibility to edit the following parameters:
