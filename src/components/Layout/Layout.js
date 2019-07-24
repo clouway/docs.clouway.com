@@ -50,7 +50,7 @@ class Layout extends React.Component {
                       title={data.site.siteMetadata.title}
                       meta={[
                         {name: 'description', content: 'clouWay Product Docs'},
-                        {name: 'keywords', content: 'clouway, politis, fleerp'},
+                        {name: 'keywords', content: 'clouway, politis, fleerp, iam'},
                       ]}
                     >
                       <html lang='en'/>

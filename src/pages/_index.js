@@ -25,6 +25,10 @@ const IndexPage = ({navigate, location}) => {
           <Link to="/fleerp/docs/get-started/user-registration">
             <Button type="primary" size="large" style={{marginRight: 10}}>Fleerp</Button>
           </Link>
+
+          <Link to="/iam/docs/get-started/user-registration">
+            <Button type="primary" size="large" style={{marginRight: 10}}>IAM</Button>
+          </Link>
         </div>
       </div>
     </Layout>

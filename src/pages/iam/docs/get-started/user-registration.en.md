@@ -1,18 +1,10 @@
 ---
 date: "2019-07-20"
 title: User registration
-root: "/fleerp"
+root: "/iam"
 parents: ["Get started"]
-priority: 2
+priority: 1
 ---
-
-# User Account
-
-Getting familiar with user management
-
-- User registration
-- Assign rights to user
-- Providing access to all available systems 
 
 # User registration 
 
@@ -32,12 +24,12 @@ After click "**Create an account**" button, further instructions will be receive
  
 ![Registration Form](setup-password.png)
  
-- If the user email belong to *gmail* or *facebook* account, then login in the Fleerp could be performed with dedicated buttons instead the need to set up password. 
+- If the user email belong to *gmail* or *facebook* account, then the login in could be performed with dedicated buttons instead the need to set up password. 
   
 ![Registration Form](login.png)
 <br><br>
 ---
 
-After profile activation the user would be redirected to the configuration system from where it is possible to access Fleerp either after click on the marked icon or the following link [https://my.fleerp.com](https://my.fleerp.com).
+After profile activation the user would be redirected to the configuration system.
 
 ![Registration Form](accounts-en.png)
