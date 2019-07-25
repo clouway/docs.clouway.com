@@ -21,7 +21,6 @@ class I18N extends React.Component {
   constructor(props) {
     super(props)
 
-    i18n.on('languageChanged', this.handleLanguageChanged)
     i18n.init({
       react: {useSuspense: false},
       backend: {loadPath: '/locales/{{lng}}/{{ns}}.json'},
@@ -40,6 +39,10 @@ class I18N extends React.Component {
     parts[1] = lng
 
     navigate(parts.join('/'))
+  }
+
+  componentDidMount() {
+    i18n.on('languageChanged', this.handleLanguageChanged)
   }
 
   componentWillUnmount() {
