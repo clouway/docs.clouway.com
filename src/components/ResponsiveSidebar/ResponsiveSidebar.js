@@ -2,6 +2,13 @@ import React, { Component } from "react";
 import SidebarContents from "../SidebarContents";
 
 class ResponsiveSidebar extends Component {
+  ref = React.createRef()
+
+  componentDidUpdate = () => {
+    const ref = this.ref.current
+    ref.scrollTop = ref.scrollHeight - ref.clientHeight
+  }
+
   render() {
     const { 
       root,
@@ -10,7 +17,9 @@ class ResponsiveSidebar extends Component {
     } = this.props
 
     return (
-      <div style={{
+      <div
+        ref={this.ref}
+        style={{
         position: "fixed",
         top: 60,
         left: 10,

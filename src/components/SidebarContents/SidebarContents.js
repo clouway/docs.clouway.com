@@ -101,7 +101,7 @@ class SidebarContents extends React.Component {
           // Make it compatible with gatsby-plugins-i18n as the url endpoints
           // are in format '/lng/slug'
           const targetSlug = '/' + language + root
-          const [tree, dir] = convertToTree(data.allMarkdownRemark.edges.filter(node =>
+          const [tree] = convertToTree(data.allMarkdownRemark.edges.filter(node =>
             node.node.fields.slug.startsWith(targetSlug)
           ))
 
@@ -126,7 +126,11 @@ class SidebarContents extends React.Component {
             .filter(item => slug === item.node.fields.slug ||
               (slug.slice(0,-1) === item.node.fields.slug && slug.slice(-1) === '/'))
             .length > 0 ? [expandedKey] : []
-          const defaultOpenKeys = dir.map(item => item.key)
+
+          const currentItem = data.allMarkdownRemark.edges.filter(item => slug === item.node.fields.slug)[0]
+
+          const defaultOpenKeys = currentItem.node.frontmatter.parents.map(v => `tree/${v}`)
+
           return (
               <Menu
                 mode='inline'
