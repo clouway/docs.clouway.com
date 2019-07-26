@@ -17,7 +17,7 @@ POLITIS provides functionality for editing and managing of batches. The followin
 
 Please select “Batches” from the product catalog.  
 
-![Batches](./product-list-action-menu.bg.png)
+![Batches](./product-list-action-menu.en.png)
 
 
 <split-panel>
@@ -25,14 +25,14 @@ Please select “Batches” from the product catalog.
     If the command is successful then it will be displayed a list with batches for the corresponding item:
   </panel>
   <panel>
-    <img src="./batches-list.bg.png"/>
+    <img src="./batches-list-action-menu.en.png"/>
   </panel>
 </split-panel>
 
 
 The batch edit is performed from the "Edit" menu on the same line:
 
-![Batches](./batches-list-action-menu.bg.png)
+![Batches](./batches-list-action-menu.en.png)
 
 If the command is successful then the line becomes active for editing and is able to change the name as well as the expiration date of the batch.
 
@@ -45,21 +45,21 @@ The editing of the batch ends with pressing to the accept button or when you cli
 
 The batch deactivation is performed from the menu, by pressing on the “Deactivate” button.
 
-![Batches](./batch-deactivation.bg.png)
+![Batches](./batch-deactivation.en.png)
 
 After accepting, the batch is set in deactivated state and the users will not be able to select it when working with documents.
 **Note:** The batch deactivation will be reflected on the both sides, Web and Mobile version of Politis.
 
-![Batches](./batch-deactivated.bg.png)
+![Batches](./batch-deactivated.en.png)
 
 ### Activate batch
 
 Deactivated batch can be activated again when you click on “Activate” on the same row.
 
-![Batches](batch-activation.bg.png)
+![Batches](batch-activation.en.png)
 
 The result after performing the operation above is:
 
-![Batches](./batch-activated.bg.png)
+![Batches](./batch-activated.en.png)
 
 After activation, the batch will be available for selection in Web and Mobile version of the app. 
