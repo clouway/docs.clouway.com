@@ -11,24 +11,20 @@ const i18n = i18next
   .use(LanguageDetector)
   .use(initReactI18next)
 
+i18n.init({
+  react: {useSuspense: false},
+  backend: {loadPath: '/locales/{{lng}}/{{ns}}.json'},
+  detection: {order: ['path', 'querystring', 'cookie', 'localStorage', 'htmlTag', 'subdomain']},
+  whitelist: ['en', 'bg'],
+  fallbackLng: 'en',
+  interpolation: {escapeValue: false}
+})
+
 class I18N extends React.Component {
   static propTypes = {
     children: PropTypes.node.isRequired,
     navigate: PropTypes.func.isRequired,
     location: PropTypes.object.isRequired
-  }
-
-  constructor(props) {
-    super(props)
-
-    i18n.init({
-      react: {useSuspense: false},
-      backend: {loadPath: '/locales/{{lng}}/{{ns}}.json'},
-      detection: {order: ['path', 'querystring', 'cookie', 'localStorage', 'htmlTag', 'subdomain']},
-      whitelist: ['en', 'bg'],
-      fallbackLng: 'en',
-      interpolation: {escapeValue: false}
-    })
   }
 
   handleLanguageChanged = lng => {
