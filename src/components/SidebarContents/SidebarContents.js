@@ -55,15 +55,75 @@ const constructTree = (list) => {
 
 const sortTree = tree => {
   tree.sort((a,b)=> {
-    if (((a.children && b.children) ||
-    (!a.children && !b.children)) &&
-    a.priority > b.priority) return 1
-    else if (a.children) return 1
+    if ((a.children && b.children) || (!a.children && !b.children)) {
+      return a.priority - b.priority
+    }
+
+    if (a.children) {
+      return 1
+    }
+
     return -1
   })
 }
 
-class SidebarContents extends React.Component {
+class SidebarMenu extends React.PureComponent {
+  render () {
+    const {
+      data,
+      root,
+      slug,
+      language,
+      expandedKey
+    } = this.props
+
+    // Make it compatible with gatsby-plugins-i18n as the url endpoints
+    // are in format '/lng/slug'
+    const targetSlug = '/' + language + root
+    const [tree] = convertToTree(data.allMarkdownRemark.edges.filter(node =>
+      node.node.fields.slug.startsWith(targetSlug)
+    ))
+
+    sortTree(tree)
+
+    const loop = data => data.map((item) => {
+      if (item.children) {
+        sortTree(item.children)
+        return (
+          <SubMenu key={item.key} title={<span style={{fontWeight:900}}>{item.title}</span>}>
+            {loop(item.children)}
+          </SubMenu>
+        )
+      }
+      return (
+        <Menu.Item key={item.key}>
+          <Link to={item.path} onClick={this.onSetSidebarOpen}>{item.title}</Link>
+        </Menu.Item>
+      )
+    })
+    const selectedKeys = data.allMarkdownRemark.edges
+      .filter(item => slug === item.node.fields.slug ||
+        (slug.slice(0,-1) === item.node.fields.slug && slug.slice(-1) === '/'))
+      .length > 0 ? [expandedKey] : []
+
+    const currentItem = data.allMarkdownRemark.edges.filter(item => slug === item.node.fields.slug)[0]
+
+    const defaultOpenKeys = currentItem.node.frontmatter.parents.map(v => `tree/${v}`)
+
+    return (
+      <Menu
+        mode='inline'
+        inlineIndent={12}
+        selectedKeys={selectedKeys}
+        defaultOpenKeys={defaultOpenKeys}
+      >
+        {loop(tree)}
+      </Menu>
+    )
+  }
+}
+
+class SidebarContents extends React.PureComponent {
   onSetSidebarOpen = () => {
     this.props.onSetSidebarOpen(false)
   }
@@ -97,51 +157,15 @@ class SidebarContents extends React.Component {
             }
           }
         `}
-        render={data => {
-          // Make it compatible with gatsby-plugins-i18n as the url endpoints
-          // are in format '/lng/slug'
-          const targetSlug = '/' + language + root
-          const [tree] = convertToTree(data.allMarkdownRemark.edges.filter(node =>
-            node.node.fields.slug.startsWith(targetSlug)
-          ))
-
-          sortTree(tree)
-
-          const loop = data => data.map((item) => {
-            if (item.children) {
-              sortTree(item.children)
-              return (
-                <SubMenu key={item.key} title={<span style={{fontWeight:900}}>{item.title}</span>}>
-                  {loop(item.children)}
-                </SubMenu>
-              )
-            }
-            return (
-              <Menu.Item key={item.key}>
-                <Link to={item.path} onClick={this.onSetSidebarOpen}>{item.title}</Link>
-              </Menu.Item>
-            )
-          })
-          const selectedKeys = data.allMarkdownRemark.edges
-            .filter(item => slug === item.node.fields.slug ||
-              (slug.slice(0,-1) === item.node.fields.slug && slug.slice(-1) === '/'))
-            .length > 0 ? [expandedKey] : []
-
-          const currentItem = data.allMarkdownRemark.edges.filter(item => slug === item.node.fields.slug)[0]
-
-          const defaultOpenKeys = currentItem.node.frontmatter.parents.map(v => `tree/${v}`)
-
-          return (
-              <Menu
-                mode='inline'
-                inlineIndent={12}
-                selectedKeys={selectedKeys}
-                defaultOpenKeys={defaultOpenKeys}
-              >
-                {loop(tree)}
-              </Menu>
-          )
-        }}
+        render={data => (
+          <SidebarMenu
+            data={data}
+            root={root}
+            slug={slug}
+            language={language}
+            expandedKey={expandedKey}
+          />
+        )}
       />
     )
   }
