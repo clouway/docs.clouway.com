@@ -1,10 +1,8 @@
-import React from "react"
+import React from 'react'
 
-import Card from 'antd/lib/card'
+import {Card} from 'antd'
 
 import Link from 'components/Link'
-
-import 'antd/lib/card/style/css'
 
 const PostCard = ({ post }) => (
   <div>

@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
-import Anchor from 'antd/lib/anchor'
-import 'antd/lib/anchor/style/css'
-import { onSetAnchorOpen } from '../../actions/layout'
+
+import { Anchor } from 'antd'
 import { connect } from 'react-redux'
+
+import { onSetAnchorOpen } from '../../actions/layout'
+
 import './TableOfContents.css'
 
 const { Link } = Anchor

@@ -1,11 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import {Row, Col} from 'antd';
 import Helmet from 'react-helmet'
 import MediaQuery from 'react-responsive';
-import {Layout as AntdLayout} from 'antd';
 import {StaticQuery, graphql} from 'gatsby'
+import {Row, Col, Layout as AntdLayout} from 'antd';
 
 import Header from '../Header'
 import Footer from '../Footer'
@@ -79,9 +78,9 @@ class Layout extends React.Component {
 
                       {(!matches && onPostPage) ?
                         <AntdLayout>
-                          <AntdLayout.Sider>
+                          <AntdLayout.Content>
                             <ResponsiveSidebar root={sidebarRoot} slug={slug} language={language}/>
-                          </AntdLayout.Sider>
+                          </AntdLayout.Content>
                           <AntdLayout.Content
                             className={classes.content}
                             style={{
@@ -94,9 +93,9 @@ class Layout extends React.Component {
                               {children}
                             </Container>
                           </AntdLayout.Content>
-                          <AntdLayout.Sider>
+                          <AntdLayout.Content>
                             <ResponsiveAnchor/>
-                          </AntdLayout.Sider>
+                          </AntdLayout.Content>
                         </AntdLayout>
                         :
                         <AntdLayout.Content className={classes.content}>
