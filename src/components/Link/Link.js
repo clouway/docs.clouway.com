@@ -5,7 +5,7 @@ import Link from 'gatsby-link'
 import {withTranslation} from 'react-i18next'
 
 const LinkWrapper = ({t, to, tReady, i18n, defaultNS, ...props}) => {
-  if (!i18n.language) {
+  if (!i18n.language || typeof to !== 'string') {
     return <a {...props} />
   }
 
@@ -18,8 +18,8 @@ const LinkWrapper = ({t, to, tReady, i18n, defaultNS, ...props}) => {
 
 LinkWrapper.propTypes = {
   t: PropTypes.func.isRequired,
-  to: PropTypes.string.isRequired,
   i18n: PropTypes.object.isRequired,
+  to: PropTypes.string,
   tReady: PropTypes.bool
 }
 

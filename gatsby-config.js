@@ -40,6 +40,20 @@ module.exports = {
         path: `${__dirname}/src/menuItems`,
       },
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'locales',
+        path: `${__dirname}/src/locales/`
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-copy-files',
+      options: {
+        source: `${__dirname}/src/locales`,
+        destination: '/locales'
+      }
+    },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
     {
