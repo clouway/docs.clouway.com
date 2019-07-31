@@ -2,7 +2,7 @@ import React from 'react'
 
 import classes from './LangBar.module.scss'
 
-class LangBarItem extends React.Component {
+class LangBarItem extends React.PureComponent {
   handleClick = () => {
     this.props.onClick(this.props.code)
   }
@@ -10,21 +10,12 @@ class LangBarItem extends React.Component {
   render() {
     const {label, active} = this.props;
 
-    return active ? (
-      <a
-        onClick={this.handleClick}
-        className={`${classes.item} ${classes.activeItem}`}
-      >
-        {label}
-      </a>
-    ) : (
-      <a
-        onClick={this.handleClick}
-        className={classes.item}
-      >
-        {label}
-      </a>
-    )
+    if (active) {
+      return <h4 className={classes.item} style={{color: '#6494ec'}} onClick={this.handleClick}>{label}</h4>
+    }
+
+    return <h5 className={classes.item} onClick={this.handleClick}>{label}</h5>
+
   }
 }
 
