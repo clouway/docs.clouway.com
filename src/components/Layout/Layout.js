@@ -94,7 +94,7 @@ class Layout extends React.Component {
                             </Container>
                           </AntdLayout.Content>
                           <AntdLayout.Content>
-                            <ResponsiveAnchor/>
+                            <ResponsiveAnchor location={location}/>
                           </AntdLayout.Content>
                         </AntdLayout>
                         :

@@ -1,8 +1,16 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+
 import TableOfContents from '../TableOfContents';
 
 class ResponsiveAnchor extends Component {
+  static propTypes = {
+    location: PropTypes.object.isRequired
+  }
+
   render() {
+    const { location } = this.props;
+
     return (
       <div style={{
         position: "fixed",
@@ -19,7 +27,7 @@ class ResponsiveAnchor extends Component {
           top: 0,
           bottom: 0
         }}>
-          <TableOfContents offsetTop={80} affix={true}/>
+          <TableOfContents location={location} offsetTop={80} affix={true}/>
         </div>
       </div>
     )

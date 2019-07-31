@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 
 import { Anchor } from 'antd'
 import { connect } from 'react-redux'
+import { navigate } from 'gatsby'
 
 import { onSetAnchorOpen } from '../../actions/layout'
 
@@ -41,6 +43,10 @@ const constructTree = list => {
 }
 
 class TableOfContents extends Component {
+  static propTypes = {
+    location: PropTypes.object.isRequired
+  }
+
   constructor(props) {
     super(props)
     this.state = {
@@ -53,6 +59,9 @@ class TableOfContents extends Component {
     this.setState({
       anchors: filterAnchorDetails(anchors)
     })
+
+    const { pathname, hash } = this.props.location
+    navigate(pathname + hash)
   }
 
   onSetAnchorOpen = () => {
