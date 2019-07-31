@@ -30,6 +30,10 @@ class I18N extends React.Component {
   handleLanguageChanged = lng => {
     const {navigate, location} = this.props
 
+    if (location.pathname.startsWith(`/${lng}`)) {
+      return
+    }
+
     const parts = location.pathname.split('/')
 
     parts[1] = lng
