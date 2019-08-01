@@ -25,7 +25,7 @@ The main screen is divided in two main components:
 - sidebar;
 - main screen;
 
-### Sidebar
+## Sidebar
 
 The sidebar serves the following purposes:
 
@@ -37,7 +37,7 @@ The sidebar serves the following purposes:
 
 ---
 
-### Main screen
+## Main screen
 
 The main screen displays data that is collected from the tracking objects for the selected time frame.
 
@@ -57,7 +57,7 @@ There are two types of trip reports:
 - simplified trip report;
 - detailed trip report;
 
-### Simplified trip report
+## Simplified trip report
 
 Generating simplified report is done by the selection of:
 
@@ -78,7 +78,7 @@ The report contains the following information:
 
 ---
 
-### Detailed trip report
+## Detailed trip report
 
 The detailed trip report provide complete information on each stop and start, where and when it happened
 and much more detailed and useful information.
@@ -255,7 +255,7 @@ The screen is divided in two components:
 - side-panel;
 - main screen;
 
-### Side-panel
+## Side-panel
 
 ![Digital-inputs](side-panel-en.png)
 
@@ -276,7 +276,7 @@ will be generated.
 The type select field provides functionality for port type indexing. This allows generating reports for
 repetitive port types, such as: door-1, door-2 etc...
 
-### Main screen
+## Main screen
 
 ![Digital-inputs](main-screen-di-en.png)
 

@@ -10,13 +10,13 @@ priority: 53
 
 Any alarm can be paused for a certain period of time.
 
-#### Select the desired alarm
+## Select the desired alarm
 
 ![alarms](suspend-alarm-en.png)
 
 ---
 
-#### Suspend
+## Suspend
 
 Suspending the alarm is necessary when ignoring an alarm for an indefinite period of time.
 In this state, the alarm will not be triggered.
@@ -25,7 +25,7 @@ In this state, the alarm will not be triggered.
 
 ---
 
-#### Resume
+## Resume
 
 Suspended alarm can be restored. Activation is done with the "Resume" button.
 
