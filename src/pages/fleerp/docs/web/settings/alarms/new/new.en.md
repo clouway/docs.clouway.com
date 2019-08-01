@@ -29,7 +29,7 @@ Creating a new alarm is done with the "New Alarm" button.
 
 For creating a new alarm, the following settings are required:
 
-### General
+## General
 
 - Type - the type of alarm is selected;
 - Name - random name of the alarm;
@@ -39,7 +39,7 @@ For creating a new alarm, the following settings are required:
 
 ---
 
-### Rules
+## Rules
 
 The *Rules* field is available for configuration only for some alarms.
 
@@ -47,7 +47,7 @@ The *Rules* field is available for configuration only for some alarms.
 
 ---
 
-### Filters
+## Filters
 
 - Inside zones - when selecting a zone, the alarm will only be triggered if the object is inside the zone;
 - Outside zones - when selecting a zone, the alarm will only be triggered if the object is outside the zone;
@@ -57,7 +57,7 @@ The *Rules* field is available for configuration only for some alarms.
 
 ---
 
-### Notifications
+## Notifications
 
 The Notification field allows the user to provide an email address, to which triggered alarms are sent.
 

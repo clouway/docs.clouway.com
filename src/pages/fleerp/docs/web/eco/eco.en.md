@@ -18,7 +18,7 @@ The main screen is divided in two main components:
 - Side panel
 - Summary screen
 
-### Side panel
+## Side panel
 
 The side panel serves the purpose of picking a set period of time, for which eco report to be
 generated, filtering and selection of a concrete driver or vehicle, to display the corresponding
@@ -26,10 +26,7 @@ detailed rating as well as the violations.
 
 ![Eco](images/side-panel-en.png)
 
-<br>
----
-
-### Summary screen
+## Summary screen
 
 The summary screen contains:
 - detailed summary, related to the organization as a whole, i.e. for all drivers (and vehicles, that do not
@@ -49,10 +46,7 @@ The eco driving panel combines several key features:
 
 ![Side-panel](images/eco-en.png)
 
-<br>
----
-
-### Picking a time frame
+## Picking a time frame
 
 Picking a time frame for which eco report will be generated is accomplished by clicking on the already
 selected dates, and picking new ones from the calendar that will appear:
@@ -61,19 +55,13 @@ selected dates, and picking new ones from the calendar that will appear:
 
 It has to be noted that the maximum time frame, which the system allows to be picked for generating eco report, is one month.
 
-<br>
----
-
-### Filtering by name or licence plate number
+## Filtering by name or licence plate number
 
 The name and licence plate number filter provides easy filtration, in case the organization has many drivers or vehicles.
 
 ![Side-panel](images/filter-en.png)
 
-<br>
----
-
-### Drivers and vehicles list, and their selection
+## Drivers and vehicles list, and their selection
 
 The drivers and vehicles are sorted in descending order by their current eco rating.
 
@@ -118,7 +106,7 @@ The available settings includes configuration of penalty points which will be re
 
 ![Settings-section](images/settings-section-en.png)
 
-### Speeding
+## Speeding
 
 The **speeding** section provides an option for configuration of:
 - the maximum allowable speed of movement at interval 0 - 180 km/h
@@ -126,7 +114,7 @@ The **speeding** section provides an option for configuration of:
 
 ![Speeding](images/speeding-en.png)
 
-### Harsh driving
+## Harsh driving
 
 The **harsh driving** section provides an option for configuration of penalty points for the following violations:
 - Harsh acceleration
@@ -135,7 +123,7 @@ The **harsh driving** section provides an option for configuration of penalty po
 
 ![Harsh-driving](images/harsh-driving-en.png)
 
-### Excessive idling
+## Excessive idling
 
 The **excessive idling** section provides an option for configuration of:
 - the time duration in minutes after which the penalty points are applied

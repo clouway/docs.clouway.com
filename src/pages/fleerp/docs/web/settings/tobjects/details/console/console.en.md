@@ -16,8 +16,6 @@ which caches these commands, and sends them as soon as the connection with the d
 
 ![Console](console-en.png)
 
-<br>
----
 The button on the main bar activates the "Watching" mode. This mode makes it easier to activate the device.
 
 #### Important:
@@ -26,15 +24,12 @@ This mode is available for certain period of time а hour.
 
 ![Console](watchingMode-en.png)
 
-<br>
----
-
 The console is divided in two key components:
 
 - commands window;
 - table with real-time data;
 
-### Commands window
+## Commands window
 
 The command window is a tool, which can be used for sending new commands, as well as reviewing the whole command
 and response history of the current tracking object. The normal console behaviour is as follows: command - response,
@@ -44,22 +39,13 @@ The commands sent from the user are situated in the left part of the commands wi
 
 ![Console](user-commands-en.png)
 
-<br>
----
-
 The command responses are situated in the right part of the commands window:
 
 ![Console](command-responses-en.png)
 
-<br>
----
-
 New commands are typed in the designated field:
 
 ![Console](new-command-en.png)
-
-<br>
----
 
 If a new command is sent during "Deep sleep" mode of the device, it will be cached and receive pending status. After
 the device has renewed the connection with the server, all pending commands will be sent. Commands can be deleted only
@@ -67,18 +53,12 @@ if they are currently pending. Already sent commands can not be deleted. A comma
 
 ![Console](pending-en.gif)
 
-<br>
----
-
-### Table with real-time data
+## Table with real-time data
 
 The table with real-time data is an essential part of the instruments of every technician, who installs GPS devices.
 It contains vital information about the current state of every device.
 
 ![Console](real-time-data-en.png)
-
-<br>
----
 
 The following parameters can be monitored through it:
 

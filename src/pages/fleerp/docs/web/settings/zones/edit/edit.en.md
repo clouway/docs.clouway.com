@@ -16,15 +16,15 @@ Editing a zone is done by clicking on the name of a zone.
 
 In a few simple steps, zone editing is done.
 
-#### First step 
+## First step 
 
 Clicking on the button "Edit layers" and editing the zone on map.
 
-#### Second step
+## Second step
 
 It must keep the changes with "Save" button located in the upper left corner of the map.
 
-#### Third step 
+## Third step 
 
 The last step is clicking the "Edit" button.
 

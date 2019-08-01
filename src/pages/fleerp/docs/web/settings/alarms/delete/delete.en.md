@@ -10,10 +10,10 @@ priority: 54
 
 It is easy to delete an alarm already created:
 
-#### Select the desired alarm
+## Select the desired alarm
 
 ![alarms](delete-alarm-en.png)
 
-#### Click "Delete" button
+## Click "Delete" button
 
 ![alarms](delete-button-en.png)
