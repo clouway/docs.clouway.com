@@ -5,6 +5,7 @@ import Link from 'components/Link';
 import {connect} from 'react-redux';
 
 import Menu from '../Menu';
+import DocSearch from '../DocSearch'
 import {getMenuState} from '../../store/selectors';
 
 class Header extends Component {
@@ -45,6 +46,7 @@ class Header extends Component {
             </h1>
           </div>
           <Menu sidebarDocked={sidebarDocked}/>
+          <DocSearch/>
         </div>
       </div>
     )
