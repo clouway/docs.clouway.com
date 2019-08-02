@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Справки
 root: "/fleerp"
 parents: ["Уеб приложение"]
-priority: 28
+priority: 5
 ---
 
 # Справки
@@ -35,7 +35,7 @@ priority: 28
 - селектиране на конкретен проследяващ обект или група.
 - експортиране - генерираната справка се експортира в Excel файл. 
 
-![Reports](sidebar-bg.png)
+![Reports](images/sidebar-bg.png)
 
 ---
 
@@ -43,13 +43,13 @@ priority: 28
 
 Основният екран визуализира данни, които са събрани от проследяваните обекти за избраната времева рамка.
 
-![Reports](main-screen-bg.png)
+![Reports](images/main-screen-bg.png)
 
 ---
 
 Също така е предоставен бутон за принтиране на дадена справка.
 
-![Reports](print-button.png)
+![Reports](images/print-button.png)
 
 # Пътен лист
 
@@ -76,7 +76,7 @@ priority: 28
   - **начален** - показанията на километража в началото на периода;
   - **краен** - показанията на километража в края на периода;
   
-![Trips](simple-bg.png)
+![Trips](images/simple-bg.png)
 
 ---
 
@@ -107,7 +107,7 @@ priority: 28
   - адрес на спиране;
 - **престой** - времето от спирането до потеглянето на проследявания обект;
 
-![Trips](details-bg.png)
+![Trips](images/details-bg.png)
 
 # Спирания
 
@@ -126,7 +126,7 @@ priority: 28
 - **край** - край на престоя;
 - **престой** - общото време в което проследявания обект е бил в покой;
 
-![Stops](stops-bg.png)
+![Stops](images/stops-bg.png)
 
 # Употреба
 
@@ -149,7 +149,7 @@ priority: 28
   - **пробег** - разстоянието което е изминато;
   - **продължителност** - времето в което се е движело проследяваното устройство;
 
-![Stops](usage-bg.png)
+![Stops](images/usage-bg.png)
 
 # Гориво
 
@@ -167,23 +167,23 @@ priority: 28
  
 Справката може да бъде генерирана, както за един обект, така и за цяла група.
 
-![ToFuel](to-fuel-bg.png)
+![ToFuel](images/to-fuel-bg.png)
 
-![GroupFuel](group-fuel-bg.png)
+![GroupFuel](images/group-fuel-bg.png)
 
 Добавена е допълнителна визуализация във вид на графика, достъпна от бутона.
 
-![ChartButton](chart-button-bg.png)
+![ChartButton](images/chart-button-bg.png)
 
-![FuelChart](fuel-chart-bg.png)
+![FuelChart](images/fuel-chart-bg.png)
 
 Възможно е скриване/показване на данни от графиката след клик върху даден етикет.
 
-![ChartOptions](chart-options-bg.png) 
+![ChartOptions](images/chart-options-bg.png) 
 
 При посочване с мишката върху точка от графиката се визуализира прозорец с информация за дадения момент.
 
-![Popup](popup-bg.png)
+![Popup](images/popup-bg.png)
 
 **Важно:** функционалноста се намира в етап на бета разработка и е възможна поява на некоретни данни, поради неправилно отчетени от датчика стойности.
 
@@ -200,9 +200,9 @@ priority: 28
 - край на алармата;
 - допълнителна информация;
 
-![TrackingObjectAlarms](to-alarms-bg.png)
+![TrackingObjectAlarms](images/to-alarms-bg.png)
 
-![GroupAlarms](group-alarms-bg.png)
+![GroupAlarms](images/group-alarms-bg.png)
 
 Ако потребителят посочи тип на аларма, при търсенето ще се визуализират само алармите от зададения тип. В противен случай
 ще бъдат визуализирани всички възникнали аларми.
@@ -227,11 +227,11 @@ priority: 28
 За по-детайлна информация, с плъзгане на мишката по графиката се визуализират данните от аналоговите портове
 за всеки един момент от справката.
 
-![AnalogInputs](analog-inputs-bg.png)
+![AnalogInputs](images/analog-inputs-bg.png)
 
 Визуализирането на данни от различни аналогови портове може да бъде скривано и показвано с един клик върху даден етикет. 
 
-![AnalogInputs](hidden-ports-bg.png)
+![AnalogInputs](images/hidden-ports-bg.png)
 
 ---
 
@@ -241,16 +241,16 @@ priority: 28
 лесно при конфигурирането на даден порт. В настройките на всеки порт има бутон "Шумове" и когато той е активиран
 графиката се изглажда *[линк](../../web/settings/tobjects/details/ports/analogs)*.
 
-![AnalogInputs](noise-false-bg.png)
+![AnalogInputs](images/noise-false-bg.png)
 
-![AnalogInputs](noise-true-bg.png)
+![AnalogInputs](images/noise-true-bg.png)
 
 # Цифрови данни
 
 Цифровите данни предоставят възможност на потребителя, да генерира подробна справка относно конфигурираните
 цифрови портове на даден проследяван обект или група от проследявани обекти.
 
-![Digital-inputs](digitals-bg.png)
+![Digital-inputs](images/digitals-bg.png)
 
 ---
 
@@ -261,7 +261,7 @@ priority: 28
 
 ## Страничен панел
 
-![Digital-inputs](side-panel-bg.png)
+![Digital-inputs](images/side-panel-bg.png)
 
 ---
 
@@ -282,7 +282,7 @@ priority: 28
 
 ## Основен екран
 
-![Digital-inputs](main-screen-bg.png)
+![Digital-inputs](images/main-screen-bg.png)
 
 ---
 
@@ -295,4 +295,4 @@ priority: 28
 
 Системата предоставя възможност и за принтиране на генерираната справка, чрез предвидения за това бутон:
 
-![Digital-inputs](print-bg.png)
+![Digital-inputs](images/print-bg.png)

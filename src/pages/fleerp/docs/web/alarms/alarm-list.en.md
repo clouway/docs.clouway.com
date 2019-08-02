@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Alarms
 root: "/fleerp"
 parents: ["Web application"]
-priority: 26
+priority: 4
 ---
 
 # Alarms
