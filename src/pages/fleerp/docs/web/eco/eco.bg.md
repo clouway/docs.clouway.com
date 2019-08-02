@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Еко показатели
 root: "/fleerp"
 parents: ["Уеб приложение"]
-priority: 21
+priority: 3
 ---
 
 # Въведение

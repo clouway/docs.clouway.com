@@ -3,7 +3,7 @@ date: "2019-07-20"
 title: Reports
 root: "/fleerp"
 parents: ["Web application"]
-priority: 28
+priority: 5
 ---
 
 # Reports
@@ -33,7 +33,7 @@ The sidebar serves the following purposes:
 - filtering and selection of a concrete tracking object or group;
 - exporting - the generated report is exported to an Excel file; 
 
-![Reports](sidebar-en.png)
+![Reports](images/sidebar-en.png)
 
 ---
 
@@ -41,13 +41,13 @@ The sidebar serves the following purposes:
 
 The main screen displays data that is collected from the tracking objects for the selected time frame.
 
-![Reports](main-screen-en.png)
+![Reports](images/main-screen-en.png)
 
 ---
 
 The user is able to print given report via the provided button.
 
-![Reports](print-button.png)
+![Reports](images/print-button.png)
 
 # Trips
 
@@ -74,7 +74,7 @@ The report contains the following information:
   - **start** - the odometer reading at the start of the report;
   - **end** - the odometer reading at the end of the report;
   
-![Trips](simple-en.png)
+![Trips](images/simple-en.png)
 
 ---
 
@@ -105,7 +105,7 @@ The report contains the following information:
   - stop address;
 - **Idle** - the elapsed time from the stop to the start of the next trip of the tracking object;
 
-![Trips](details-en.png)
+![Trips](images/details-en.png)
 
 # Stops
 
@@ -124,7 +124,7 @@ The report contains the following information:
 - **end** - end of the period of stay;
 - **duration** - the time that the tracking object was stationary;
 
-![Stops](stops-en.png)
+![Stops](images/stops-en.png)
 
 # Usage
 
@@ -147,7 +147,7 @@ The report contains the following information:
   - **mileage** - the distance traveled;
   - **duration** - the total time the tracking object was moving;
 
-![Stops](usage-en.png)
+![Stops](images/usage-en.png)
 
 # Fuel
 
@@ -164,23 +164,23 @@ The report contains the following information:
 
 The fuel report can be generated for both a single object and an entire group.
 
-![ToFuel](to-fuel-en.png)
+![ToFuel](images/to-fuel-en.png)
 
-![GroupFuel](group-fuel-en.png)
+![GroupFuel](images/group-fuel-en.png)
 
 Additional information is added as a line chart available from the added button.
 
-![ChartButton](chart-button-en.png)
+![ChartButton](images/chart-button-en.png)
 
-![FuelChart](fuel-chart-en.png)
+![FuelChart](images/fuel-chart-en.png)
 
 It is possible visualized data to be hidden/shown after click on given label.
 
-![ChartOptions](chart-options-en.png) 
+![ChartOptions](images/chart-options-en.png) 
 
 When the mouse is moved to a point on the line chart, a window with information for given time is displayed.
 
-![Popup](popup-en.png)
+![Popup](images/popup-en.png)
 
 **Important:** the functionality is in beta development stage and incorrect data may occur due to values incorrectly read by the sensor.
 
@@ -196,9 +196,9 @@ The report provides the following information:
 - alarm terminated;
 - additional information;
 
-![TrackingObjectAlarms](to-alarms-en.png)
+![TrackingObjectAlarms](images/to-alarms-en.png)
 
-![GroupAlarms](group-alarms-en.png)
+![GroupAlarms](images/group-alarms-en.png)
 
 If the user specifies an alarm type, only the alarms of the specified type will be displayed in the search. Otherwise, all alarms will be displayed.
 
@@ -223,11 +223,11 @@ For this example, the following analog ports are chosen:
 For more detailed information, dragging the mouse on the line chart displays
 the data from the analog ports at any point in the report.
 
-![AnalogInputs](analog-inputs-en.png)
+![AnalogInputs](images/analog-inputs-en.png)
 
 The visualization of data from different analog ports can be hidden and displayed with click on a label.
 
-![AnalogInputs](hidden-ports-en.png)
+![AnalogInputs](images/hidden-ports-en.png)
 
 ---
 
@@ -237,16 +237,16 @@ There are possible noises in the analog data that are received by the tracking o
 This problem is easily solved when configuring a port. In the settings of each port there is a "Noises" button 
 and when it is activated the line chart smooths *[link](../../web/settings/tobjects/details/ports/analogs)*.
 
-![AnalogInputs](noise-true-en.png)
+![AnalogInputs](images/noise-true-en.png)
 
-![AnalogInputs](noise-false-en.png)
+![AnalogInputs](images/noise-false-en.png)
 
 # Digital inputs
 
 The digital inputs provides the user with possibility to generate detailed report concerning the already
 configured digital ports on a given tracking object or group of tracking objects.
 
-![Digital-inputs](digitals-en.png)
+![Digital-inputs](images/digitals-en.png)
 
 ---
 
@@ -257,7 +257,7 @@ The screen is divided in two components:
 
 ## Side-panel
 
-![Digital-inputs](side-panel-en.png)
+![Digital-inputs](images/side-panel-en.png)
 
 ---
 
@@ -278,7 +278,7 @@ repetitive port types, such as: door-1, door-2 etc...
 
 ## Main screen
 
-![Digital-inputs](main-screen-di-en.png)
+![Digital-inputs](images/main-screen-di-en.png)
 
 ---
 
@@ -291,4 +291,4 @@ The main screen consists of several fields:
 
 There is the option for printing the generated report by the provided button:
 
-![Digital-inputs](print-en.png)
+![Digital-inputs](images/print-en.png)
