@@ -43,11 +43,12 @@ class ResponsiveTopBar extends Component {
       >
       <div
         style={{
-          position: "absolute",
           width: "100%",
+          zIndex: 2,
           height: 40,
-          background: 'aliceblue',
-          marginTop: '55px',
+          marginTop: 55,
+          position: "fixed",
+          background: 'aliceblue'
         }}
       >
         {!anchorOpen &&
