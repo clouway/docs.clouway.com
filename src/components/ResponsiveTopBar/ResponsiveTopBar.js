@@ -29,6 +29,7 @@ class ResponsiveTopBar extends Component {
       anchorOpen,
       root,
       menuOpen,
+      location,
       language,
       nMenuItem,
       slug,
@@ -111,7 +112,7 @@ class ResponsiveTopBar extends Component {
           WebkitOverflowScrolling: "touch",
           transition: "left .3s ease-out, right .3s ease-out",
         }}>
-          <TableOfContents offsetTop={0} affix={false}/>
+          <TableOfContents location={location} offsetTop={0} affix={false}/>
         </div>
       }
 
