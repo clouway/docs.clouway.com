@@ -3,7 +3,7 @@ date: "2019-07-18"
 title: Управление на Клиенти
 root: "/politis"
 parents: ["Мобилно приложение"]
-priority: 3
+priority: 10
 ---
 <h1 align="center">
     Управление на клиенти
