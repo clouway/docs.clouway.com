@@ -3,7 +3,7 @@ date: "2019-07-18"
 title: Регистриране на Продажби
 root: "/politis"
 parents: ["Мобилно приложение"]
-priority: 1
+priority: 9
 ---
 <h1 align="center">
     Регистриране на продажби
