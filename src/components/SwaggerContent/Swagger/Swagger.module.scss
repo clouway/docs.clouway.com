@@ -1,0 +1,45 @@
+.container {
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.tag {
+    padding: 5px 15px;
+    font-size: 16px;
+    box-shadow: 1px 1px 4px rgba(0,0,0,.4);
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.url {
+    font-size: 20px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.definition {
+    margin: 20px;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #F5F5F5;
+}
+
+.link {
+    color: #2db7f5;
+    cursor: pointer;
+}
+
+.thead {
+    border-bottom: 2px solid #dedede;
+}
+
+.tbody {
+    border-bottom: 1px solid #dedede;
+    vertical-align: text-top;
+}
+
+table {
+    width: 100%;
+}

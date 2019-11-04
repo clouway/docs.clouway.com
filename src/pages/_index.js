@@ -1,13 +1,45 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import {Button} from 'antd'
-
-import Link from 'components/Link'
-
 import Layout from '../components/Layout'
+import ProductBox from '../components/ProductBox'
 
 const IndexPage = ({navigate, location}) => {
+
+  const products  = [
+    {
+      title: 'Politis',
+      links: [
+        {
+          title: 'Documentation',
+          href: '/politis/get-started/introduction',
+        }
+      ]
+    },
+    {
+      title: 'Fleerp',
+      links: [
+        {
+          title: 'Documentation',
+          href: '/fleerp/docs/get-started/tracker-activation'
+        },
+        {
+          title: 'API Docs',
+          href: '/api/fleerp/swagger'
+        }
+      ]
+    },
+    {
+      title: 'IAM',
+      links: [
+        {
+          title: 'Documentation',
+          href: '/iam/docs/get-started/user-registration'
+        }
+      ]
+    }
+  ]
+
   return (
     <Layout navigate={navigate} location={location}>
       <div>
@@ -18,17 +50,12 @@ const IndexPage = ({navigate, location}) => {
           </p>
           <h4>Всичко от което имаш нужда за твоя бизнес</h4>
           <br/>
-          <Link to="/politis/get-started/introduction">
-            <Button type="primary" size="large" style={{marginRight: 10}}>Politis</Button>
-          </Link>
 
-          <Link to="/fleerp/docs/get-started/tracker-activation">
-            <Button type="primary" size="large" style={{marginRight: 10}}>Fleerp</Button>
-          </Link>
-
-          <Link to="/iam/docs/get-started/user-registration">
-            <Button type="primary" size="large" style={{marginRight: 10}}>IAM</Button>
-          </Link>
+          <div style={{display: 'flex', justifyContent: 'center'}}>
+            {
+              products.map((product, i) => <ProductBox key={i} product={product} />)
+            }
+          </div>
         </div>
       </div>
     </Layout>
