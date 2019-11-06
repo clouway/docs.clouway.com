@@ -40,7 +40,8 @@ const constructTree = (list) => {
           const newNode = {
             key: 'tree/' + item.parents[i],
             title: item.parents[i],
-            children: []
+            children: [],
+            priority: item.priority
           }
           subtree.push(newNode)
           dir.push(newNode)
@@ -55,7 +56,7 @@ const constructTree = (list) => {
 
 const sortTree = tree => {
   tree.sort((a,b)=> {
-    if ((a.children && b.children) || (!a.children && !b.children)) {
+    if ((a.priority > b.priority) || (a.children && b.children) || (!a.children && !b.children)) {
       return a.priority - b.priority
     }
 
