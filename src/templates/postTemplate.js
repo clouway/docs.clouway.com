@@ -22,10 +22,15 @@ const Panel = ({children}) => {
   return <div>{children}</div>
 }
 
+const Bullet = () => {
+  return <span>&#8226;</span>
+}
+
 const renderAst = new rehypeReact({
   createElement: React.createElement,
   components: {
     'panel': Panel,
+    'bullet': Bullet,
     'split-panel': SplitPanel
   }
 }).Compiler
