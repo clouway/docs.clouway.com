@@ -3,9 +3,17 @@ module.exports = {
     title: 'clouWay Doc Site'
   },
   plugins: [
-    'gatsby-plugin-sass',
     'gatsby-plugin-antd',
     'gatsby-plugin-react-helmet',
+    {
+      resolve: 'gatsby-plugin-sass',
+      options: {
+        postCssPlugins: [
+          require('tailwindcss'),
+          require('./tailwind.config.js')
+        ],
+      },
+    },
     {
       resolve: 'gatsby-plugin-i18n',
       options: {
