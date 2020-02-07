@@ -1,3 +1,3 @@
-import index from './_index'
+import index from './index.en'
 
 export default index

@@ -19,10 +19,10 @@ class Header extends Component {
 
     return (
       <div
+        className="bg-blue-700"
         style={{
           width: "100%",
-          height: (menuOpen && !sidebarDocked) ? nMenuItem * 32 + 55 : 55,
-          background: 'cornflowerblue',
+          height: (menuOpen && !sidebarDocked) ? nMenuItem * 32 + 55 : 55
         }}
       >
         <div
