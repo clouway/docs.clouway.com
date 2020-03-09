@@ -5,7 +5,8 @@ import Layout from '../components/Layout';
 import { connect } from 'react-redux'
 import { onSidebarContentExpand } from '../actions/layout'
 import 'katex/dist/katex.min.css'
-import { getSidebarExpandedKey } from '../store/selectors';
+import { getSidebarExpandedKey } from '../store/selectors'
+import InternalLink from '../components/InternalLink'
 
 const SplitPanel = ({children}) => {
   // The AST contains '\n' string values which are messing indexes   
@@ -31,7 +32,8 @@ const renderAst = new rehypeReact({
   components: {
     'panel': Panel,
     'bullet': Bullet,
-    'split-panel': SplitPanel
+    'split-panel': SplitPanel,
+    'link': InternalLink
   }
 }).Compiler
 
