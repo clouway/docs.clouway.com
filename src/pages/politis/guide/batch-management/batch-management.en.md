@@ -2,8 +2,8 @@
 date: "2019-07-19"
 title: Batch management
 root: "/politis"
-parents: ["Batch management"]
-priority: 4
+parents: ["Guide", "Nomenclatures"]
+priority: 11
 ---
 <h1 align="center">
   Batch management

@@ -2,8 +2,8 @@
 date: "2020-03-10"
 title: Работа с фактури
 root: "/politis"
-parents: ["Ръководство"]
-priority: 5
+parents: ["Ръководство", "Продажби"]
+priority: 2
 ---
 <h1 align="center">
   Работа с фактури

@@ -2,8 +2,8 @@
 date: "2019-07-18"
 title: Регистриране на Продажби
 root: "/politis"
-parents: ["Ръководство"]
-priority: 2
+parents: ["Ръководство", "Продажби"]
+priority: 1
 ---
 <h1 align="center">
     Регистриране на продажби

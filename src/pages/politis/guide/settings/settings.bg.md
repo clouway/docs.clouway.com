@@ -3,7 +3,7 @@ date: "2020-03-04"
 title: Общи настройки
 root: "/politis"
 parents: ["Ръководство", "Настройки"]
-priority: 11
+priority: 14
 ---
 <h1 align="center">
   Общи настройки

@@ -3,7 +3,7 @@ date: "2019-07-18"
 title: Липси/Излишъци
 root: "/politis"
 parents: ["Ръководство", "Стоков контрол"]
-priority: 17
+priority: 6
 ---
 <h1 align="center">
   Липси/Излишъци

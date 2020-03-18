@@ -3,7 +3,7 @@ date: "2019-07-18"
 title: Трансфер на стока
 root: "/politis"
 parents: ["Ръководство", "Стоков контрол"]
-priority: 16
+priority: 5
 ---
 <h1 align="center">
   Трансфер на стока
