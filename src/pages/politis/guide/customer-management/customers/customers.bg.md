@@ -2,8 +2,8 @@
 date: "2019-07-18"
 title: Клиенти
 root: "/politis"
-parents: ["Ръководство", "Управление на Клиенти"]
-priority: 11
+parents: ["Ръководство", "Номенклатури"]
+priority: 8
 ---
 <h1 align="center">
  Клиенти

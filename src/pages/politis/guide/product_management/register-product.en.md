@@ -2,8 +2,8 @@
 date: "2019-07-18"
 title: Product Managment
 root: "/politis"
-parents: ["Product Managment"]
-priority: 3
+parents: ["Guide", "Nomenclatures"]
+priority: 10
 ---
 <h1 align="center">
   Product Managment

@@ -3,7 +3,7 @@ date: "2020-03-04"
 title: Фирмени детайли
 root: "/politis"
 parents: ["Ръководство", "Настройки"]
-priority: 12
+priority: 15
 ---
 <h1 align="center">
   Фирмени детайли

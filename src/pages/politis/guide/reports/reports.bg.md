@@ -2,8 +2,8 @@
 date: "2019-07-18"
 title: Отчети
 root: "/politis"
-parents: ["Ръководство"]
-priority: 13
+parents: ["Ръководство", "Отчети"]
+priority: 12
 ---
 <h1 align="center">
   Отчети

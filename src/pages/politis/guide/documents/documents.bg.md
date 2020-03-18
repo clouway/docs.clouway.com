@@ -2,8 +2,8 @@
 date: "2020-03-11"
 title: Създаване и отпечатване на документи
 root: "/politis"
-parents: ["Ръководство"]
-priority: 15
+parents: ["Ръководство", "Отчети"]
+priority: 13
 ---
 
 <h1 align="center">

@@ -2,8 +2,8 @@
 date: "2019-07-18"
 title: Управление на Продукти
 root: "/politis"
-parents: ["Ръководство"]
-priority: 3
+parents: ["Ръководство", "Номенклатури"]
+priority: 10
 ---
 <h1 align="center">
   Управление на продукти

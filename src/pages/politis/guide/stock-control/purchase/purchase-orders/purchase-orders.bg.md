@@ -3,7 +3,7 @@ date: "2019-07-18"
 title: Покупка със заявка
 root: "/politis"
 parents: ["Ръководство", "Стоков контрол"]
-priority: 14
+priority: 3
 ---
 <h1 align="center">
   Покупка със заявка
